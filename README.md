@@ -22,6 +22,7 @@ You will need the following things properly installed on your computer.
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit App Live version [https://floating-hollows-23805.herokuapp.com](https://floating-hollows-23805.herokuapp.com)
 
 ### Code Generators
 
