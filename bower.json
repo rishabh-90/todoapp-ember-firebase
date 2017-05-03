@@ -1,0 +1,22 @@
+{
+  "name": "todoapp-firebase",
+  "description": "Small description for todoapp-firebase goes here",
+  "main": "",
+  "authors": [
+    "rishabh-90 <rishabhaggarwal@outlook.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rishabh-90/todoapp-ember-firebase",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "^2.18.1",
+    "bootstrap": "^3.3.7",
+    "showdown": "^1.6.4"
+  }
+}

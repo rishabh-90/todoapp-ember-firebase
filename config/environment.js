@@ -4,8 +4,24 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'todoapp-firebase',
     environment: environment,
+    firebase: {
+      apiKey: "AIzaSyB8tqWfI8e2PNQrqg8Ffi15yH5FKIgSeAE",
+      authDomain: "todoapp-de283.firebaseapp.com",
+      databaseURL: "https://todoapp-de283.firebaseio.com",
+      projectId: "todoapp-de283",
+      storageBucket: "todoapp-de283.appspot.com",
+      messagingSenderId: "426742950011"
+    },
     rootURL: '/',
     locationType: 'auto',
+    contentSecurityPolicy: {
+      'script-src': '\'self\' \'unsafe-eval\' apis.google.com',
+      'style-src': '\'self\' \'unsafe-inline\' fonts.googleapis.com',
+      'font-src': '\'self\' fonts.gstatic.com',
+      'frame-src': '\'self\' https://*.firebaseapp.com',
+      'img-src': '\'self\' *.gravatar.com s3.amazonaws.com',
+      'connect-src': '\'self\' wss://*.firebaseio.com https://*.googleapis.com'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
