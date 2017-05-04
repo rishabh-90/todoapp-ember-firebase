@@ -22,17 +22,15 @@
     <hr><br>
     {{#if filter}}
       {{#each filteredTodos as |todo|}}
-        <div class="well">
-          <h4>{{#link-to 'todos.edit' todo.id}}{{todo.title}}{{/link-to}} <span class="label label-primary pull-right">{{format-date todo.date}}</span></h4>
+        {{#todo-list title=todo.title date=todo.date id=todo.id}}
           {{todo.body}}
-        </div>
+        {{/todo-list}}
       {{/each}}
     {{else}}
       {{#each sortedTodos as |todo|}}
-        <div class="well">
-          <h4>{{#link-to 'todos.edit' todo.id}}{{todo.title}}{{/link-to}} <span class="label label-primary pull-right">{{format-date todo.date}}</span></h4>
+        {{#todo-list title=todo.title date=todo.date id=todo.id}}
           {{todo.body}}
-        </div>
+        {{/todo-list}}
       {{/each}}
     {{/if}}
   </div>
